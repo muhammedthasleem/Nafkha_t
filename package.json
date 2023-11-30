@@ -5,19 +5,13 @@
   "author": "zeon.studio",
   "license": "MIT",
   "packageManager": "yarn@1.22.19",
-
-  "homepage": "https://muhammedthasleem.github.io/Nafkha_t", 
   "scripts": {
     "dev": "astro dev",
-    "build": "next build",
-    "export":"next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out",
+    "build": "astro build",
     "format": "prettier -w ./src",
     "generate-json": "node scripts/jsonGenerator.js",
     "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
   },
-
   "dependencies": {
     "@astrojs/mdx": "^1.1.3",
     "@astrojs/react": "^3.0.4",
